@@ -19,5 +19,14 @@
   "bugs": {
     "url": "https://github.com/KJlmfe/bot/issues"
   },
-  "homepage": "https://github.com/KJlmfe/bot#readme"
+  "homepage": "https://github.com/KJlmfe/bot#readme",
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.3.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
 }
