@@ -15,13 +15,18 @@ const bot = new Bot();
 /**
  * add a middleware to reply same text sent by user
  *
- * @param  {Request}  req
- * @param  {Response} res
+ * @param  {Context}   context
+ * @param  {Function}  next
  */
-bot.use((req, res) => {
-  res.text = `I got your message: ${req.text}`;
+bot.use((context, next) => {
+  context.reply.text = `I got your message: ${context.message.text}`;
+  next();
 });
 
-slackChatClient.on('message', (req, res) => {
-  bot.hears(req, res);
+slackChatClient.on('message', (message, callback) => {
+  bot.hears(message).then((context) => {
+    callback(null, context);
+  }).catch((err, context) => {
+    callback(err, context);
+  });
 });
