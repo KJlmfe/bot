@@ -10,3 +10,10 @@ A bot framework
 
 - [Botkit](https://github.com/howdyai/botkit)
 - [ChatterBot](https://github.com/gunthercox/ChatterBot)
+- [Howdy AI](https://howdy.ai/)
+- [Kore.ai Bots](https://kore.ai/)
+- [Chat Flow](https://kitt.ai)
+- https://chatbotsmagazine.com/
+
+
+
